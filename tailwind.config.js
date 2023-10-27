@@ -1,11 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}", // Note the addition of the `app` directory.
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-
-    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -13,6 +11,7 @@ module.exports = {
     colors: {
       black: "#000",
       white: "#fff",
+      orange: "#FF5C3D",
       blue_1: "#2196f3",
       blue_2: "#3062b4",
       blue_3: "#3b79de",
