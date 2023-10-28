@@ -1,9 +1,14 @@
 "use client";
 
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useState } from "react";
+import { Transition } from "@headlessui/react";
 import clsx from "clsx";
+import {
+  DarkHamburgerIcon,
+  LightHamburgerIcon,
+  SearchIcon,
+} from "../../assets/icons";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -48,7 +53,7 @@ export const Header = () => {
           Automobile
         </Link>
         <button className="lg:hidden" onClick={() => setOpen(!open)}>
-          Menu
+          {!scrolled ? <DarkHamburgerIcon /> : <LightHamburgerIcon />}
         </button>
       </div>
       <Transition
@@ -64,14 +69,24 @@ export const Header = () => {
         <div
           className={clsx(
             open ? "flex" : "hidden",
-            "flex lg:flex-row flex-col items-center gap-[40px]"
+            "flex lg:flex-row flex-col mt-1 items-center gap-[40px]"
           )}
         >
-          <Link href="/">Home</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Car</Link>
-          <Link href="/">Pricing</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/" className="hover:text-orange transition text-[12px]">
+            Home
+          </Link>
+          <Link href="/" className="hover:text-orange transition text-[12px]">
+            About
+          </Link>
+          <Link href="/" className="hover:text-orange transition text-[12px]">
+            Car
+          </Link>
+          <Link href="/" className="hover:text-orange transition text-[12px]">
+            Pricing
+          </Link>
+          <Link href="/" className="hover:text-orange transition text-[12px]">
+            Contact
+          </Link>
         </div>
       </Transition>
       <Transition
@@ -89,7 +104,9 @@ export const Header = () => {
             "gap-1 justify-center mt-5 lg:mt-0"
           )}
         >
-          <button className="bg-white p-[4px] rounded">icon</button>
+          <button className="bg-white p-[4px] rounded">
+            <SearchIcon />
+          </button>
           <button className="p-[4px] bg-orange rounded min-w-[100px]">
             Log In
           </button>
