@@ -1,13 +1,8 @@
 "use client";
 
-import {
-  AppleIcon,
-  FacebookIcon,
-  GooglePlayStoreIcon,
-  InstagramIcon,
-  TwitterIcon,
-} from "../../assets/icons";
+import { FacebookIcon, InstagramIcon, TwitterIcon } from "../../assets/icons";
 import { CircularProgress } from "../Elements";
+import { AppDownloadBtn } from "../Shared";
 
 export const HeroSection = () => {
   return (
@@ -24,7 +19,7 @@ export const HeroSection = () => {
         </div>
       </div>
       <div className="flex flex-col items-center text-center pt-16 w-full">
-        <h1 className="text-[48px] text-center font-700">
+        <h1 className="text-[28px] md:text-[48px] text-center font-700">
           Fast And Easy Way To Rent <br />
           <span className="text-orange">A Branded</span> Car
         </h1>
@@ -32,26 +27,7 @@ export const HeroSection = () => {
           Discover RentalX car rental options in USA with rent a car <br />
           Select from a range of car options and local specials
         </p>
-        <div className="flex gap-2 ">
-          <div className="border-white cursor-pointer bg-white text-black flex px-2 gap-2 w-[140px] items-center py-1">
-            <div className="w-10">
-              <AppleIcon />
-            </div>
-            <div className="w-full text-start ">
-              <p className="text-[7px]">Download on any</p>
-              <p className="text-[12px] font-600">Apple store</p>
-            </div>
-          </div>
-          <div className="border-white cursor-pointer bg-white text-black flex px-2 gap-2 w-[140px] items-center py-1">
-            <div className="w-10">
-              <GooglePlayStoreIcon />
-            </div>
-            <div className="w-full text-start ">
-              <p className="text-[7px]">Download on any</p>
-              <p className="text-[12px] font-600">Google Play</p>
-            </div>
-          </div>
-        </div>
+        <AppDownloadBtn />
         <CircularSection />
       </div>
     </div>
@@ -62,29 +38,35 @@ const CircularSection = () => {
   return (
     <div className="lg:ml-[400px] mt-20 flex gap-2">
       <CircularProgress
-        percent={10}
+        percent={20}
         size="md"
         children={
           <div>
-            <p>222 km</p>
+            <p className="text-[16px] m-0 p-0 font-600">222</p>
+            <p className="text-[7px] m-0 p-0 mt-[-3px] mb-2">km</p>
+            <p className="uppercase text-[8px]">Top Speed</p>
           </div>
         }
       />
       <CircularProgress
-        percent={10}
+        percent={60}
         size="md"
         children={
           <div>
-            <p>222 km</p>
+            <p className="text-[16px] m-0 p-0 font-600">92</p>
+            <p className="text-[7px] m-0 p-0 mt-[-3px] mb-2">c</p>
+            <p className="uppercase text-[8px]">Engine Temp</p>
           </div>
         }
       />
       <CircularProgress
-        percent={10}
+        percent={40}
         size="md"
         children={
           <div>
-            <p>222 km</p>
+            <p className="text-[16px] m-0 p-0 font-600">65</p>
+            <p className="text-[7px] m-0 p-0 mt-[-3px] mb-2">hp</p>
+            <p className="uppercase text-[8px]">Power car</p>
           </div>
         }
       />

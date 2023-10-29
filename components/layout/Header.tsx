@@ -24,7 +24,8 @@ export const Header = () => {
     };
 
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
+      const isScrolled = window.scrollY > 30;
+      console.log(isScrolled);
       setScrolled(isScrolled);
     };
 
@@ -43,7 +44,7 @@ export const Header = () => {
     <div
       className={clsx(
         scrolled
-          ? "bg-white text-black fixed left-0 right-0"
+          ? "bg-white text-black fixed left-0 right-0 z-50"
           : "bg-black text-white",
         "px-[40px] py-[20px] lg:px-[80px] flex lg:gap-0 gap-6 flex-col lg:flex-row justify-between"
       )}

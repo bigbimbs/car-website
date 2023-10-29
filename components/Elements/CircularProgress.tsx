@@ -22,7 +22,7 @@ type CircularProgressProps = {
 export const CircularProgress = ({
   hideLabel,
   children,
-  color = "#F8700D",
+  color = "#FF5C3D",
   size = "md",
   percent = 0,
 }: CircularProgressProps) => {
