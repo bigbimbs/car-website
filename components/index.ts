@@ -1,5 +1,6 @@
 export * from "./Home";
-export * from "./Layout";
-export * from "./Elements";
+export * from "./Layout/Footer";
+export * from "./Layout/Header";
+export * from "./Elements/CircularProgress";
 export * from "./Shared";
-export * from "./Car Page";
+export * from "./CarPage";
