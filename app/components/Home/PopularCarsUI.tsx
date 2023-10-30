@@ -9,8 +9,8 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CarCard } from "./CarCard";
-import { ICar } from "../../types";
-import { formatMoney } from "../../utils";
+import { ICar } from "./../../types";
+import { formatMoney } from "./../../utils";
 import Link from "next/link";
 
 type FilterType = {

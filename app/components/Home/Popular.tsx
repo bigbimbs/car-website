@@ -1,4 +1,4 @@
-import { ICarListApiResponse, IPopularCars } from "../../types";
+import { ICarListApiResponse, IPopularCars } from "./../../types";
 import { PopularCarsUI } from "./PopularCarsUI";
 
 async function getData() {
