@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Home",
 };
 
-export default function Page() {
+export default async function Page() {
   return (
     <>
       <div className="w-full min-h-[calc(100vh-150px)] bg-gradient-to-b from-[#181818] via-[#2F2F2F] to-[#434449] relative">
@@ -38,7 +38,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="pt-40 pb-14 mb-20 bg-[#F3F3F3]">
+      <div className="pt-[220px] pb-14 mb-20 bg-[#F3F3F3] mt-[-100px]">
         <PopularCarsFilter />
         <PopularCars />
       </div>

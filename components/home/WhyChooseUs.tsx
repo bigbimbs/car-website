@@ -17,7 +17,7 @@ export const WhyChooseUs = () => {
             alt=""
           />
         </div>
-        <div className="w-[500px] flex flex-col gap-6">
+        <div className="w-full md:w-[500px] flex flex-col gap-6">
           <div className="flex items-center gap-6">
             <div className="h-10 !w-10 bg-orange rounded"></div>
             <div className="w-[calc(100%-40px)]">
