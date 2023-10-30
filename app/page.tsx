@@ -8,7 +8,7 @@ import {
   PopularCarsFilter,
   Testimonial,
   WhyChooseUs,
-} from "../components";
+} from "./components";
 
 export const metadata: Metadata = {
   title: "Home",

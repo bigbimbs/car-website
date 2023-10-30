@@ -9,8 +9,8 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CarCard } from "./CarCard";
-import { ICar } from "../../types";
-import { formatMoney } from "../../utils";
+import { ICar } from "./../../types";
+import { formatMoney } from "./../../utils";
 import Link from "next/link";
 
 type FilterType = {
@@ -153,7 +153,7 @@ export const CarCardUI = ({
         />
       </div>
       <p className="text-[#8B8B8B] text-[10px] text-left font-700">
-        {gradeScore.toFixed(1)} (grade)
+        {gradeScore?.toFixed(1) || "-"} (grade)
       </p>
       <h4 className="text-[20px] text-left font-600 mt-1 mb-4">{title}</h4>
       <div className="grid grid-cols-2">

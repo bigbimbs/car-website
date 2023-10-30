@@ -1,6 +1,6 @@
 import React from "react";
-import { ICarDetails } from "../../types";
-import { formatMoney } from "../../utils";
+import { ICarDetails } from "./../../types";
+import { formatMoney } from "./../../utils";
 
 export const CarDetails = ({ data }: { data: ICarDetails }) => {
   return (

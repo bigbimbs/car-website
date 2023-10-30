@@ -5,8 +5,8 @@ import {
   OurStories,
   Testimonial,
   WhyChooseUs,
-} from "../../../components";
-import { ICarDetails, ICarMedia } from "../../../types";
+} from "../.././components";
+import { ICarDetails, ICarMedia } from "../../types";
 
 async function getCarDetails(carId: string) {
   const res = await fetch(
